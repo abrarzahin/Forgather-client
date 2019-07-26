@@ -19,6 +19,7 @@ const styles = (theme) => ({
 });
   
 
+
 class login extends Component {
 
     constructor() {
@@ -28,6 +29,12 @@ class login extends Component {
           password: '',
           errors: {}
         };
+      }
+
+      componentWillReceiveProps(nextProps) {
+        if (nextProps.UI.errors) {
+          this.setState({ errors: nextProps.UI.errors });
+        }
       }
       handleSubmit = (event) => {
         event.preventDefault();
