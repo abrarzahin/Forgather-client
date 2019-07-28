@@ -18,15 +18,17 @@ import { postScream } from '../redux/actions/dataActions';
 const styles = (theme) => ({
   ...theme,
   submitButton: {
-    position: 'relative'
+    position: 'relative',
+    float: 'right',
+    marginTop: 10
   },
   progressSpinner: {
     position: 'absolute'
   },
   closeButton: {
     position: 'absolute',
-    left: '90%',
-    top: '10%'
+    left: '91%',
+    top: '6%'
   }
 });
 
@@ -84,16 +86,16 @@ class PostScream extends Component {
           >
             <CloseIcon />
           </MyButton>
-          <DialogTitle>Post a new scream</DialogTitle>
+          <DialogTitle>Create a new post</DialogTitle>
           <DialogContent>
             <form onSubmit={this.handleSubmit}>
               <TextField
                 name="body"
                 type="text"
-                label="SCREAM!!"
+                label="Post"
                 multiline
                 rows="3"
-                placeholder="Scream at your fellow apes"
+                placeholder="New post"
                 error={errors.body ? true : false}
                 helperText={errors.body}
                 className={classes.textField}
