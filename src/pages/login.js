@@ -60,8 +60,10 @@ class login extends Component {
             <Grid container className={classes.form}>
             <Grid item sm />
             <Grid item sm>
+            <h3>ForGather </h3>
+            
               <img src={AppIcon} alt="social-media" className={classes.image} />
-              <Typography variant="h3" className={classes.pageTitle}>
+              <Typography variant="h4" className={classes.pageTitle}>
                 Login
               </Typography>
               <form noValidate onSubmit={this.handleSubmit}>

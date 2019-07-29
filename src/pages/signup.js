@@ -64,8 +64,9 @@ const styles = (theme) => ({
             <Grid container className={classes.form}>
             <Grid item sm />
             <Grid item sm>
-              <img src={AppIcon} alt="monkey" className={classes.image} />
-              <Typography variant="h3" className={classes.pageTitle}>
+            <h3>ForGather</h3>
+              <img src={AppIcon} alt="forgather" className={classes.image} />
+              <Typography variant="h4" className={classes.pageTitle}>
                 SignUp
               </Typography>
               <form noValidate onSubmit={this.handleSubmit}>
