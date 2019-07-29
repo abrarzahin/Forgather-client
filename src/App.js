@@ -23,6 +23,9 @@ import user from './pages/user';
 
 const theme = createMuiTheme(themeObject);
 
+axios.defaults.baseURL =
+  'https://us-central1-forgather555.cloudfunctions.net/api';
+
 
 const token = localStorage.FBIdToken;
 if (token) {
